@@ -1,0 +1,126 @@
+h2 {
+    font: normal normal bold 30px/42px Montserrat;
+    letter-spacing: 3px;
+    color: #000000;
+    text-transform: uppercase;
+}
+.hero {
+    min-width: 100%;
+    min-height: 100vh;
+    background: transparent url('/assets/svg/rectangle.svg') 0 0 no-repeat padding-box;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .logo {
+        position: absolute;
+        display: block;
+        top: 80px;
+        left: 95px;
+
+        @media (max-width: 768px) {
+            top: 40px;
+            left: 50px;
+            img {
+                max-width: 150px;
+            }
+        }
+    }
+
+    .hero-bg {
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        min-width: 100%;
+        min-height: 100%;
+        background: transparent url('/assets/img/hero-river.png') 0 0 no-repeat padding-box;
+        background-size: cover;
+        opacity: 0.2;
+    }
+
+    h1 {
+        font: normal normal bold 98px/136px Montserrat;
+        letter-spacing: 9.8px;
+        color: #FFFFFF;
+        text-shadow: 0 3px 6px #00000029;
+        z-index: 2;
+
+        @media (max-width: 768px) {
+            font: normal normal bold 24px/36px Montserrat;
+            letter-spacing: 4px;
+        }
+    }
+}
+
+.dash-before-padding {
+    padding-left: 100px !important;
+
+    .dash-before {
+        position: relative;
+
+        &::before {
+            content: ' ';
+            position: absolute;
+            border-bottom: solid .5px black;
+            width: 75px;
+            left: -100px;
+            margin-top: 14px;
+        }
+    }
+
+    &.booking {
+        .dash-before {
+            &::before {
+                width: 45px;
+                left: -65px;
+            }
+        }
+    }
+
+    .counter {
+        font: normal normal normal 16px/50px Montserrat;
+        letter-spacing: 3.2px;
+        color: #9A9A9A;
+        text-transform: uppercase;
+    }
+}
+
+.el-main {
+    .container {
+        .row {
+            margin-top: 150px;
+            margin-bottom: 150px;
+        }
+    }
+    .dash-before-padding {
+        .el-button.is-text {
+            border: 1px solid black;
+            color: black;
+
+            &:hover {
+                color: white;
+                background: black;
+            }
+        }
+    }
+    .el-form-item {
+        .el-button {
+            background: black !important;
+            color: white !important;
+
+            &.is-disabled {
+                color: grey !important;
+            }
+        }
+    }
+    .booking {
+        min-width: 400px;
+        max-width: 400px;
+        word-break: break-all;
+    }
+
+    background: transparent url('/assets/svg/group.svg') right 50px bottom 20px no-repeat padding-box;
+    background-size: 250px auto;
+}

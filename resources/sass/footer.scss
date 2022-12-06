@@ -1,0 +1,38 @@
+footer {
+    background-color: black;
+    color: white;
+    height: auto !important;
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+    p {
+        font: normal normal normal 14px/24px Montserrat;
+        letter-spacing: 0;
+        color: #FFFFFF;
+        opacity: 0.6;
+    }
+
+    ul {
+        list-style: none;
+        li {
+            font: normal normal normal 14px/24px Montserrat;
+            letter-spacing: 0;
+            color: #FFFFFF;
+            opacity: 0.6;
+
+            &:first-of-type {
+                text-align: left;
+                font: normal normal normal 14px/44px Montserrat;
+                letter-spacing: 4.2px;
+                color: #FFFFFF;
+                text-transform: uppercase;
+                opacity: 1;
+            }
+        }
+    }
+}
